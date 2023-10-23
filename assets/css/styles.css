@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@100;400&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background: #c4c4c4;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.resume_warraper{
+    background: #fff;
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+.resume_warraper .resume_left{
+    width: 35%;
+    padding: 40px;
+    background: #322C2C;
+    height: 100%;
+
+}
+.resume_left .resume_avt{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.resume_left .resume_avt img{
+    width: 100%;
+    border-radius: 50%;
+    border: 20px solid #271E1E;
+}
+.resume_body{
+    margin-top: 50px;   
+}
+.resume_left .resume_body_item .item_title{
+    background: #03989E;
+    width: 100%;
+    height: 35px;
+    color:#fff;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.resume_left .item_content{
+    color: #fff;
+    padding-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.resume_left .item_content .item_listcontent{
+    display: flex;
+    line-height: 26px;
+    font-size: 11px;
+}
+.resume_left .item_listcontent .item_content_data{
+    margin-left: 12px;
+}
+.resume_left .education_content{
+    margin-bottom: 12px;
+}
+.resume_left .item_content .education_title{
+    font-size: 14px;
+    font-weight: bold;
+}
+.resume_left .item_content .education_subtitle{
+    font-size: 12px;
+    font-weight: bold;
+}
+.resume_left .item_content .education_year{
+    font-size: 11px;
+}
+
+.resume_left .resume_body_skill{
+    display: flex;
+    flex-direction: column;
+}
+.resume_left .resume_body_skill .skill_bar{
+    background-color: #fff;
+    
+    border-radius: 5px;
+}
+.resume_left  .skill_bar .item_content{
+    display: flex;
+    justify-content: space-between;
+}
+.resume_left .resume_body_skill .list_skill_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 11px;
+    font-weight: 600;
+}
+.list_item_skill{
+    padding-right: 0px !important;
+    
+}
+.resume_left .resume_body_skill .skill_bar p{
+    width: 100px;
+    position: relative;
+    height: 8px;
+}
+.resume_left .resume_body_skill .skill_bar span{
+    background: #03989E;
+    position: absolute;
+    top:0;
+    height: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
