@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Public+Sans&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Open+Sans:ital@0;1&family=Public+Sans&family=Roboto:wght@100;400&display=swap');
 *{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -35,6 +37,33 @@ body{
     width: 100%;
     border-radius: 50%;
     border: 20px solid #271E1E;
+}
+
+.resume_left .resume_namerole{
+    color: #fff;
+}
+ .resume_namerole .resume_left_fname{
+ 
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 70px;
+    letter-spacing: 10px;
+}
+.resume_namerole .resume_left_lname{
+   
+    font-size: 65px;
+    font-size: 60px;
+    line-height: 65px;
+}
+
+.resume_left .resume_namerole .resume_left_role{
+    font-size: 25px;
+    line-height: 45px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .resume_body{
     margin-top: 50px;   
@@ -100,6 +129,9 @@ body{
     font-size: 11px;
     font-weight: 600;
 }
+.list_skill_content .skill_name{
+    min-width: 100px;
+}
 .list_item_skill{
     padding-right: 0px !important;
     
@@ -119,13 +151,21 @@ body{
 }
 
 /* resume right */
+
+.resume_left .resume_namerole{
+    display: none;
+}
+
 .resume_right{
     padding:30px
 }
-.resume_right .resume_namerole {
+ .resume_namerole {
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
-.resume_right .resume_namerole .resume_right_fname{
+
+ .resume_namerole .resume_right_fname{
     color: #271E1E;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -134,4 +174,158 @@ body{
     line-height: 70px;
     letter-spacing: 10px;
 }
+.resume_namerole .resume_right_lname{
+    color: #271E1E;
+    font-size: 65px;
+    font-size: 60px;
+    line-height: 65px;
+}
 
+.resume_right .resume_namerole .resume_right_role{
+    font-size: 25px;
+    line-height: 45px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.resume_right .resume_experience{
+    margin-top: 30px;
+}
+.resume_right .resume_experience .resume_experience_header{
+
+}
+.resume_right_header{
+    background: #444440;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.resume_right .resume_experience_title{
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+}
+
+.resume_right .resume_experience_title .resume_experience_jobtitle{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 18px;
+}
+.resume_right .resume_experience_title .resume_experience_year{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 16px;
+}
+.resume_experience  .resume_experience_item{
+    margin-bottom: 20px;
+}
+.resume_experience  .resume_experience_item .resume_experience_company{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.resume_experience  .resume_experience_item .resume_experience_desc{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 12px;
+    line-height: 18px;
+    color: #737373;
+    text-align: justify;
+}
+
+
+.resume_references{
+    display: flex;
+    flex-direction: column;
+}
+.resume_references .resume_references_item{
+    display: flex;
+    flex-direction: column;
+}
+.resume_references .resume_right_body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.resume_references .resume_right_body .resume_references_item_header{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.resume_references .resume_right_body .resume_references_item_subheader{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+.resume_references .resume_references_contact{
+    font-size: 12px;
+    margin-top: 4px;
+}
+.resume_references .resume_references_item_contact{
+    display: flex;
+}
+.resume_references_item_contact .references_contact_content{
+    min-width: 60px;
+    font-weight: bold;
+}
+.resume_references_item_contact .references_contact_desc{
+    color: #737373;
+}
+
+@media screen and (max-width:800px){
+    .resume_right .resume_namerole{
+        display: none;
+    }
+    .resume_warraper{
+        flex-direction: column;
+        width: 95% ;
+        margin: 10px auto;
+    }
+    .resume_left,
+    .resume_right{
+        width: 100%!important;
+    }
+    .resume_left .resume_namerole{
+        display: block;
+    }
+    .resume_left .resume_body_skill .skill_bar{
+        width: 100%;
+    }
+    .resume_left .resume_body_skill .skill_bar p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:400px ){
+    .resume_right{
+        padding: 20px 40px;
+    }
+    .resume_references .resume_right_body{
+        flex-direction: column;
+    }
+    .resume_body_skill .list_skill_content{
+        flex-direction: column;
+        align-items: flex-start !important;
+        width: 100%;
+
+    }
+    .list_item_skill{
+        display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    }
+    .skill_bar{
+        width: 100%;
+    }
+    .resume_experience_title{
+        flex-direction: column;
+    }
+    .resume_references_item_contact{
+        flex-direction: column;
+    }
+}
+    
