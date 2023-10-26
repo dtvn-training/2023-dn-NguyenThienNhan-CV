@@ -299,7 +299,7 @@ body{
     }
 }
 
-@media screen and (max-width:400px ){
+@media screen and (max-width:520px ){
     .resume_right{
         padding: 20px 40px;
     }
@@ -326,6 +326,12 @@ body{
     }
     .resume_references_item_contact{
         flex-direction: column;
+    }
+    .resume_references_item:first-child{
+        margin-top: 10px !important;
+    }
+    .resume_references_item{
+            margin-top: 10px;
     }
 }
     
